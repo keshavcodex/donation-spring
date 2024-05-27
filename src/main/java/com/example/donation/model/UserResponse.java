@@ -5,6 +5,10 @@ public class UserResponse {
     private String errorMessage;
     private Boolean success = true;
 
+    public UserResponse(User user) {
+        this.user = user;
+        this.errorMessage = "";
+    }
     public UserResponse(User user, String errorMessage) {
         this.user = user;
         this.errorMessage = errorMessage;

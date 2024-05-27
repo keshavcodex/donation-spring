@@ -26,6 +26,7 @@ public class UserService implements UserServiceInterface{
         Optional<User> userOptional = userRepository.findById(id);
         return userOptional.orElse(null);
     }
+
     public User editUserById(String id, User updatedUser) {
         Optional<User> userOptional = userRepository.findById(id);
         if (userOptional.isPresent()) {

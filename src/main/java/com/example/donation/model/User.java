@@ -16,6 +16,16 @@ public class User {
     private String email;
     private String password;
 
+    public User(){}
+
+    public User(User obj) {
+        this.id = obj.id;
+        this.firstName = obj.firstName;
+        this.lastName = obj.lastName;
+        this.phone = obj.phone;
+        this.email = obj.email;
+        this.password = obj.password;
+    }
 
     public String getId() {
         return id;
